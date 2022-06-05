@@ -1,3 +1,3 @@
-# Claude_Monet-One_page_website
+# Claude Monet - One page website
 
 ![Preview](images/title_image.png)
