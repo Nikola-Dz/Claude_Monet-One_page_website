@@ -1,0 +1,48 @@
+.flex {
+    display: flex;
+    /* displays flex-items (children) inline */
+    flex-wrap: wrap;
+    /* enables their wrapping */
+}
+
+.flex>div {
+    flex-basis: calc(50% - 10px);
+    /* initial width set to 50% of the parent's - left & right margins */
+    height: 100px;
+    margin: 0 5px;
+    /* preferably top & bottom margins set to zero to keep calculations simple */
+    border: 1px solid;
+    box-sizing: border-box;
+    /* because of the borders, also recommended in general */
+}
+
+.flex>div:nth-child(2) {
+    margin-top: 55px;
+    /* half of divs height + half of the desired gap between them; modification affects all but the first div */
+}
+
+.flex>div:nth-child(odd):not(:first-child) {
+    margin-top: -45px;
+    /* - half of divs height + half of the desired gap between them, so in this case the gap is 10px (2 x 5px); modification affects all but the first odd div (if ofc. modification is "")  */
+}
+
+.flex>div:nth-child(even):not(:nth-child(2)) {
+    margin-top: 10px;
+    /* gap size; modification affects all but the first three divs */
+}
+
+@media (max-width: 600px) {
+    .flex {
+        flex-direction: column
+    }
+
+    /* stacks flex-items vertically */
+    .flex>div {
+        flex-basis: auto
+    }
+
+    /* initial width set to default or 100% */
+    .flex>div:not(:first-child) {
+        margin-top: 10px !important
+    }
+}
