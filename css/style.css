@@ -112,7 +112,7 @@ body {
     box-shadow: 4px 4px 8px #242424;
 }
 
-.biography_text {
+.biography-text {
 
     background-color: whitesmoke;
     
@@ -123,14 +123,14 @@ body {
     position: absolute;
 }
 
-.biography_text h2 {
+.biography-text h2 {
 
     text-align: left;
     font-family: 'Baskervville', serif;
     font-size: 25pt;
 }
 
-.biography_text p {
+.biography-text p {
 
     text-align: justify;
     max-width: 100%;
@@ -152,7 +152,7 @@ body {
     
 }
 
-.gallery_section {
+.gallery-section {
 
     background-color: white;
     
@@ -167,7 +167,7 @@ body {
     box-shadow: 4px 4px 8px #242424;
 }
 
-.gallery_section_right {
+.gallery-section-right {
 
     background-color: white;
     
@@ -231,7 +231,7 @@ body {
 }
 
 /* BACK TO TOP */
-.back_to_top {
+.back-to-top {
 
 	font-family: 'Roboto', sans-serif;
 	font-size: 15pt;
@@ -239,11 +239,13 @@ body {
     
     padding-top: 10px;
 }
-.back_to_top a {
+
+.back-to-top a {
 	color: black;
 	text-decoration: none;
 }
-.back_to_top:hover a {
+
+.back-to-top:hover a {
 	color: #2C9AB7;
 }
 
@@ -305,7 +307,7 @@ body {
         height: auto;
     }
 
-    .gallery_section {
+    .gallery-section {
 
         background-color: white;
         
@@ -317,7 +319,7 @@ body {
         margin-top: 40px;
     }
 
-    .gallery_section_right {
+    .gallery-section-right {
 
         background-color: white;
         
@@ -348,7 +350,7 @@ body {
         box-shadow: 4px 4px 8px #242424;
     }
 
-    .biography_text {
+    .biography-text {
 
         background-color: whitesmoke;
 
